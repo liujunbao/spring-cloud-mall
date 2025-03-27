@@ -18,6 +18,14 @@ spring:
           uri: lb://product-service
           predicates:
             - Path=/api/products/**
+        - id: cart-service
+          uri: lb://cart-service
+          predicates:
+            - Path=/api/cart/**
+        - id: order-service
+          uri: lb://order-service
+          predicates:
+            - Path=/api/orders/**
     config:
       uri: http://localhost:8888
   config:

@@ -1,13 +1,16 @@
-# Spring Cloud 微服务示例项目
+# Spring Cloud 微商城项目
 
-这是一个基于 Spring Cloud 的微服务示例项目，包含以下服务：
+这是一个基于 Spring Cloud 的微服务商城项目，包含以下服务：
 
 - 网关服务 (Gateway Server)
 - 用户服务 (User Service)
 - 商品服务 (Product Service)
+- 购物车服务 (Cart Service)
+- 订单服务 (Order Service)
 - 配置服务 (Config Server)
 - 服务注册中心 (Eureka Server)
 - 管理后台 UI (Vue.js)
+- 移动端应用 (Mall App)
 
 ## 技术栈
 
@@ -32,26 +35,31 @@
 - 商品管理
 - 分类管理
 - 库存管理
+- 购物车功能
+- 订单管理
 - 响应式布局
 
 ## 项目结构
 
 ```
-spring-cloud-demo/
+spring-cloud-mall/
 ├── gateway-server/        # 网关服务
 ├── user-service/         # 用户服务
 ├── product-service/      # 商品服务
+├── cart-service/         # 购物车服务
+├── order-service/        # 订单服务
 ├── config-server/        # 配置服务
 ├── eureka-server/        # 服务注册中心
-└── admin-ui/            # 管理后台 UI
+├── admin-ui/            # 管理后台 UI
+└── mall-app/            # 移动端应用
 ```
 
 ## 快速开始
 
 1. 克隆项目
 ```bash
-git clone https://github.com/yourusername/spring-cloud-demo.git
-cd spring-cloud-demo
+git clone https://github.com/yourusername/spring-cloud-mall.git
+cd spring-cloud-mall
 ```
 
 2. 启动服务
@@ -72,6 +80,12 @@ cd ../user-service
 mvn spring-boot:run
 
 cd ../product-service
+mvn spring-boot:run
+
+cd ../cart-service
+mvn spring-boot:run
+
+cd ../order-service
 mvn spring-boot:run
 
 # 启动管理后台

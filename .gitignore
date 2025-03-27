@@ -23,7 +23,13 @@
 hs_err_pid*
 replay_pid*
 
-# IDE files
+# Maven
+target/
+.mvn/
+mvnw
+mvnw.cmd
+
+# IDE
 .idea/
 *.iml
 .vscode/
@@ -31,23 +37,26 @@ replay_pid*
 .classpath
 .settings/
 
-# Node modules
+# Node
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Build directories
-target/
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
 build/
-out/
-dist/
+*.g.dart
 
-# Application properties
-application-*.properties
-!application-example.properties
-
-# Local environment files
-.env
-.env.local
-.env.*.local
+# Local configuration
+application-local.yml
+application-dev.yml
+application-prod.yml
 
 # System Files
 .DS_Store
