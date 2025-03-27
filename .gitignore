@@ -52,6 +52,7 @@ yarn-error.log*
 .pub/
 build/
 *.g.dart
+windows/
 
 # Local configuration
 application-local.yml
